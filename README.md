@@ -1,34 +1,40 @@
-# Autcompletion Task
-This repository contains a notebook for training RNN on a 3-character autocompeltion task.
+# Character-Level Text Auto-Completion with LSTMs
 
-## Assessment Brief:
+This repository contains the implementation for a project focused on predicting the next three characters in a text sequence using a Recurrent Neural Network (specifically, an LSTM). The goal was to build a model capable of tasks similar to text-editing auto-suggestions (e.g., "Merry Christ…" -> "mas").
 
-Humans can complete words, sentences (and even sounds) when parts were lost or were 
-masked by noise. Likewise, text-editing programmes can make suggestions for the text that 
-follows. This is what you will be doing in this task: 
-Use deep learning to build a model that predicts the next three characters (e.g., “Merry 
-Christ…” -> “mas”). Evaluate the training and performance of the model. Present the code in 
-a manner that makes it easy to use for others. In your discussion, comment on why you 
-chose your model and parameters. A good discussion presents further architectures and 
-why you did not choose them. If the model does not perform well, explain what would be 
-needed to improve it. Marking (see below) will be based on the design, implementation and 
-evaluation of the deep learning approach, not necessarily on the accuracy achieved. 
-For your database, you can choose or combine from any of the ebooks that are uploaded to 
-Moodle in the assignment section. Your model must not have used any other data. It is your 
-task to create appropriate training and test sets from the data provided.
+This project was completed as part of my MSc in Language Sciences coursework at UCL.
 
-## Overview
-This project demonstrates how to:
+---
 
-* Load and preprocess the seven assigned books from Project Gutenberg.
-* Creating and training an LSTM to perform the 3-character prediction task.
-* Implement a custom `Dataset` class for efficient data loading and batching.
-* Create a `Trainer` class for streamlined training and evaluation.
-* Evaluate the selection of hyperparameters to demonstrate in-depth knowledge and understanding of NLP and deep learning.
+### 🎯 Project Goal (Based on Assessment Brief)
 
-## License 
+*   Build a deep learning model (LSTM) to predict the next three characters given a preceding text sequence.
+*   Train the model exclusively on a provided dataset of seven ebooks from Project Gutenberg.
+*   Preprocess the text data and create appropriate training and test sets.
+*   Implement the model training and evaluation pipeline.
+*   Discuss model architecture choices, parameter selection, and potential improvements.
 
-This repository is licensed under the MIT License. See the LICENSE file for details.
+### ✨ Key Features & Implementation Details
+
+*   **Data Loading & Preprocessing:** Scripts to load and clean text data from the provided ebook sources.
+*   **Model Architecture:** Implementation of a Long Short-Term Memory (LSTM) network suitable for character-level sequence prediction.
+*   **Dataset Handling:** Utilises a custom PyTorch `Dataset` class for efficient data loading and batching during training. 
+*   **Training Pipeline:** Includes code for training the LSTM model with PyTorch `Trainer` class, monitoring loss, and evaluating performance. 
+*   **Hyperparameter Exploration:** Includes analysis/discussion regarding the choice of hyperparameters (e.g., embedding size, hidden units, learning rate).
+
+### 🛠️ Technologies Used
+
+*   **Core Libraries:** Python, PyTorch, NumPy, NLTK 
+*   **Environment:** Google Colaboratory 
+
+### 💻 Code Access
+
+*   **Notebook:** The primary implementation and experiments can be found in the Colab notebook linked below:
+    *   ➡️ **Access the Colab Notebook Here:** `[https://colab.research.google.com/drive/1QvOkBVqyNy3wFoFEryN4ubcoUp_XtUmC?usp=sharing]`
+
+### 📄 License
+
+This repository is licensed under the MIT License. See the `LICENSE` file for details.
 
 ---
 
